@@ -15,9 +15,9 @@ class ViewController: UIViewController {
     
     @IBOutlet var switchLightButton: UIButton!
     
-    var isRedActive = false
-    var isYellowActive = false
-    var isGreenActive = false
+    private var isRedActive = false
+    private var isYellowActive = false
+    private var isGreenActive = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
