@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -14,43 +14,52 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrafficLight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JUx-DM-6r0">
-                                <rect key="frame" x="114" y="40" width="92" height="92"/>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JUx-DM-6r0">
+                                <rect key="frame" x="114" y="79" width="202" height="202"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="JUx-DM-6r0" secondAttribute="height" multiplier="1:1" id="g7Y-Wy-2or"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bju-xG-P08">
-                                <rect key="frame" x="114" y="162" width="92" height="92"/>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bju-xG-P08">
+                                <rect key="frame" x="114" y="311" width="202" height="202"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Bju-xG-P08" secondAttribute="height" multiplier="1:1" id="dad-zd-3dX"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qa7-xL-Jmy">
-                                <rect key="frame" x="114" y="284" width="92" height="92"/>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qa7-xL-Jmy">
+                                <rect key="frame" x="114" y="543" width="202" height="202"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="qa7-xL-Jmy" secondAttribute="height" multiplier="1:1" id="48l-cq-rP7"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vN-2h-oyB">
+                                <rect key="frame" x="123" y="837" width="185" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="qa7-xL-Jmy" firstAttribute="width" secondItem="qa7-xL-Jmy" secondAttribute="height" multiplier="1:1" id="BPb-iG-LoC"/>
                             <constraint firstItem="JUx-DM-6r0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="D8v-YX-mKf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bju-xG-P08" secondAttribute="trailing" constant="114" id="DT3-8E-hWZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4vN-2h-oyB" secondAttribute="trailing" constant="122" id="Gy7-ix-JrB"/>
                             <constraint firstItem="Bju-xG-P08" firstAttribute="top" secondItem="JUx-DM-6r0" secondAttribute="bottom" constant="30" id="IWD-sY-ESU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qa7-xL-Jmy" secondAttribute="trailing" constant="114" id="IpF-Cy-HeB"/>
+                            <constraint firstItem="4vN-2h-oyB" firstAttribute="top" relation="greaterThanOrEqual" secondItem="qa7-xL-Jmy" secondAttribute="bottom" constant="30" id="KEl-Na-xNY"/>
                             <constraint firstItem="qa7-xL-Jmy" firstAttribute="top" secondItem="Bju-xG-P08" secondAttribute="bottom" constant="30" id="UQa-zp-3cI"/>
+                            <constraint firstItem="4vN-2h-oyB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="UzB-Wt-9vH"/>
                             <constraint firstItem="Bju-xG-P08" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="114" id="Ymn-Le-cRg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JUx-DM-6r0" secondAttribute="trailing" constant="114" id="dWX-AW-6GA"/>
                             <constraint firstItem="qa7-xL-Jmy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="114" id="maT-pn-3oq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4vN-2h-oyB" secondAttribute="bottom" constant="28" id="wVt-Gv-pOg"/>
                             <constraint firstItem="JUx-DM-6r0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="114" id="wbm-QI-wiV"/>
                         </constraints>
                     </view>
