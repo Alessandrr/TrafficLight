@@ -31,10 +31,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func switchLightDidPress() {
+        switchLightButton.setTitle("NEXT", for: .normal)
+        
         if !(isRedActive || isYellowActive || isGreenActive) {
             isRedActive = true
             redLightView.alpha = 1
-            switchLightButton.setTitle("NEXT", for: .normal)
             return
         }
         
