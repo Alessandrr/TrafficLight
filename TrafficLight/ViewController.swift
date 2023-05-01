@@ -15,6 +15,10 @@ class ViewController: UIViewController {
     
     @IBOutlet var switchLightButton: UIButton!
     
+    var isRedActive = false
+    var isYellowActive = false
+    var isGreenActive = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -22,17 +26,45 @@ class ViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         // Set corner radius of view to create circle
-        redLightView.layer.cornerRadius = min(redLightView.frame.width, redLightView.frame.height) / 2
-        yellowLightView.layer.cornerRadius = min(yellowLightView.frame.width, yellowLightView.frame.height) / 2
-        greenLightView.layer.cornerRadius = min(greenLightView.frame.width, greenLightView.frame.height) / 2
+        setupLight(for: [redLightView, yellowLightView, greenLightView])
     }
     
     @IBAction func switchLightDidPress() {
+        if !(isRedActive || isYellowActive || isGreenActive) {
+            isRedActive = true
+            redLightView.alpha = 1
+            return
+        }
+        
+        if isRedActive {
+            isRedActive = false
+            redLightView.alpha = 0.3
+            isYellowActive = true
+            yellowLightView.alpha = 1
+            return
+        }
+        
+        if isYellowActive {
+            isYellowActive = false
+            yellowLightView.alpha = 0.3
+            isGreenActive = true
+            greenLightView.alpha = 1
+            return
+        }
+        
+        if isGreenActive {
+            isGreenActive = false
+            greenLightView.alpha = 0.3
+            isRedActive = true
+            redLightView.alpha = 1
+            return
+        }
     }
     
-    private func setupLight(for view: UIView) {
-        print(view.bounds.width)
-        view.layer.cornerRadius = view.bounds.width / 2
+    private func setupLight(for views: [UIView]) {
+        for view in views {
+            view.layer.cornerRadius = view.frame.width / 2
+        }
     }
 }
 
