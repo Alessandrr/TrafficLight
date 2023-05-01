@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        switchLightButton.layer.cornerRadius = 10
     }
     
     override func viewDidLayoutSubviews() {
@@ -33,6 +34,7 @@ class ViewController: UIViewController {
         if !(isRedActive || isYellowActive || isGreenActive) {
             isRedActive = true
             redLightView.alpha = 1
+            switchLightButton.setTitle("NEXT", for: .normal)
             return
         }
         
