@@ -30,16 +30,10 @@
                                     <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bju-xG-P08">
                                         <rect key="frame" x="0.0" y="184.5" width="155" height="155"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="Bju-xG-P08" secondAttribute="height" multiplier="1:1" id="dad-zd-3dX"/>
-                                        </constraints>
                                     </view>
                                     <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qa7-xL-Jmy">
                                         <rect key="frame" x="0.0" y="369.5" width="155" height="154.5"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="qa7-xL-Jmy" secondAttribute="height" multiplier="1:1" id="48l-cq-rP7"/>
-                                        </constraints>
                                     </view>
                                 </subviews>
                             </stackView>
