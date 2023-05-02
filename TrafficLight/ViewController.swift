@@ -28,8 +28,8 @@ class ViewController: UIViewController {
         greenLightView.alpha = lightIsOff
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
         // Set corner radius of view to create circle
         setupLight(for: [redLightView, yellowLightView, greenLightView])
     }
